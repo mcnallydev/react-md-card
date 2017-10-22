@@ -10,6 +10,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _style = require('./style');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -34,7 +38,7 @@ var Card = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         _style.Default,
-        null,
+        { noPadding: this.props.noPadding, noMargin: this.props.noMargin, full: this.props.full },
         this.props.children
       );
     }
@@ -42,5 +46,25 @@ var Card = function (_Component) {
 
   return Card;
 }(_react.Component);
+
+/**
+ * React Component defaultProps
+ */
+
+
+Card.defaultProps = {
+  noPadding: false,
+  noMargin: false,
+  full: false
+};
+
+/**
+ * React Component propTypes
+ */
+Card.propTypes = {
+  noPadding: _propTypes2.default.bool,
+  noMargin: _propTypes2.default.bool,
+  full: _propTypes2.default.bool
+};
 
 exports.default = Card;

@@ -4,9 +4,23 @@ import Card from '../dist';
 class App extends Component {
   render() {
     return (
-      <Card full>
-        Demo
-      </Card>
+      <div>
+        <Card>
+          Demo
+        </Card>
+
+        <Card noPadding={true}>
+          Demo
+        </Card>
+
+        <Card noMargin={true}>
+          Demo
+        </Card>
+
+        <Card full={true}>
+          Demo
+        </Card>
+      </div>
     );
   }
 }

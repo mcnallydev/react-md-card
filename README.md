@@ -15,3 +15,11 @@ import Card from 'react-md-card';
   <p>Example</p>
 </Card>
 ```
+
+## Props
+
+Name | Description | Default/Required | Type
+------|-------------|----------|-----------
+noPadding | Remove padding. | false/optional | bool
+noMargin | Remove margin. | false/optional | bool
+full | Remove borders on responsive. | false/optional | bool

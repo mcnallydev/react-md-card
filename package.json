@@ -1,6 +1,6 @@
 {
   "name": "react-md-card",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React Component Material Design Card.",
   "main": "index.js",
   "repository": "https://github.com/mcnallydev/react-md-card.git",
@@ -17,6 +17,7 @@
     "dist": "yarn run clean && yarn run build"
   },
   "dependencies": {
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "styled-components": "^2.2.0"
