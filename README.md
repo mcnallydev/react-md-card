@@ -20,6 +20,7 @@ import Card from 'react-md-card';
 
 Name | Description | Default/Required | Type
 ------|-------------|----------|-----------
+overflowHidden | Set overflow | hidden/none optional | bool
 noPadding | Remove padding. | false/optional | bool
 noMargin | Remove margin. | false/optional | bool
 full | Remove borders on responsive. | false/optional | bool
